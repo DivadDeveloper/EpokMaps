@@ -460,8 +460,8 @@ class Unmined {
     }
 
     #createGraticuleLayer(coord) {
-        const bgColor = "#ffffff";
-        const fgColor = "#222222";
+        const bgColor = "#1a1a1a";
+        const fgColor = "#ffffff";
 
         const intervalCount = this.olMap.getView().getMaxZoom() + 2;
         const graticuleIntervals = new Array(intervalCount);
@@ -580,7 +580,10 @@ class Unmined {
 
             contextmenu.clear();
             contextmenu.push({
-                text: `©Everest Corp`,
+                text: `©EverestCorp`,
+                callback: () => {
+                    window.open("https://divadbot.my.canva.site/everest-corp", "_blank");
+                }
             })
             contextmenu.push('-');
 

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>EpokMaps</title>
+    <title>uNmINeD</title>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -37,6 +37,15 @@
 </head>
 
 <body>
+
+    <div id="loadingScreen">
+
+        <div class="loader"></div>
+
+        <h2>Loading Map...</h2>
+
+    </div>
+
     <div id="map"></div>
 
     <script type="text/javascript">
@@ -54,6 +63,17 @@
         const mapElement = document.getElementById('map');
         const unmined = new Unmined(mapElement, UnminedMapProperties, UnminedRegions);
 
+            window.addEventListener("load", () => {
+
+            setTimeout(() => {
+
+                document
+                    .getElementById("loadingScreen")
+                    .classList.add("hide");
+
+            }, 300);
+
+        });
 
     </script>
 </body>
