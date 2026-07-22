@@ -580,10 +580,7 @@ class Unmined {
 
             contextmenu.clear();
             contextmenu.push({
-                text: `Copy /tp ${coordinates[0]} ~ ${coordinates[1]}`,
-                callback: () => {
-                    Unmined.copyToClipboard(`/tp ${coordinates[0]} ~ ${coordinates[1]}`);
-                }
+                text: `©Everest Corp`,
             })
             contextmenu.push('-');
 
