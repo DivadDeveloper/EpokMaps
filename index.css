@@ -14,7 +14,7 @@ html, body {
 }
 
 .mouseposition {
-    background-color: rgb(44, 44, 44);
+    background-color: white;
     padding: 3px;
     text-align: right;
 }
@@ -25,7 +25,7 @@ html, body {
 }
 
 div.ol-mouse-position {
-    background-color: rgb(44, 44, 44);
+    background-color: white;
     padding: 6px;
     border-radius: 3px;
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
@@ -39,25 +39,25 @@ div.ol-mouse-position {
     font-family: sans-serif;
     font-weight: bold;
     font-size: 14px;
-    color: rgb(44, 44, 44);
+    color: white;
     text-shadow:
-        1px 0 0 rgb(255, 255, 255),
-        0 1px 0 rgb(255, 255, 255),
-        -1px 0 0 rgb(255, 255, 255),
-        0 -1px 0 rgb(255, 255, 255);
+        1px 0 0 black,
+        0 1px 0 black,
+        -1px 0 0 black,
+        0 -1px 0 black;
     0px 0px 8px black;
 }
 
 .ol-scale-singlebar-odd {
-    background: #181818;
+    background: #ddd;
 }
 
 .ol-scale-singlebar-even {
-    background: #c2c2c2;
+    background: #444;
 }
 
 .toastify {
-    color: rgb(255, 255, 255);
+    color: black;
     background: yellow;
 }
 
