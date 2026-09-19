@@ -580,7 +580,7 @@ class Unmined {
 
             contextmenu.clear();
             contextmenu.push({
-                text: `Last Updated 2026/09/17`,
+                text: `Last Updated 2026/09/19`,
             })
             contextmenu.push('-');
 
