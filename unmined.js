@@ -580,12 +580,12 @@ class Unmined {
 
             contextmenu.clear();
             contextmenu.push({
-                text: `Last Updated 2026/09/21`,
+                text: `Last Updated: 2026/09/21`,
             })
             contextmenu.push('-');
 
             contextmenu.push({
-                text: `Place red dot marker here`,
+                text: `Place Marker`,
                 classname: 'menuitem-reddot',
                 callback: () => {
                     this.placeRedDotMarker(coordinates);
@@ -593,13 +593,13 @@ class Unmined {
             });
             if (this.redDotMarker.getCoordinates()) {
                 contextmenu.push({
-                    text: `Copy marker link`,
+                    text: `Copy Marker Link`,
                     callback: () => {
                         Unmined.copyToClipboard(window.location.href);
                     }
                 });
                 contextmenu.push({
-                    text: `Clear marker`,
+                    text: `Delete Marker`,
                     callback: () => {
                         this.placeRedDotMarker(undefined);
                     }
